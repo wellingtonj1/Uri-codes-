@@ -7,10 +7,9 @@ using namespace std;
 void jconect(int mat1[][2],int ligas)
 {
     int p=0,q=0;
-
     for(p=0;p<ligas;p++)
     {
-        for(q=0;q<ligas;q++)
+        for(q=0;q<2;q++)
         {
             cout<<mat1[p][q]<<" ";
         }
@@ -36,7 +35,7 @@ int main()
     {
         for(j=0;j<2;j++)
         {
-            cin>>conectados[i][j] ;
+            cin>>conectados[i][j];
         }
     }
 
@@ -59,13 +58,13 @@ int main()
             cout<<endl;
     }*/
 
-    while(leutudo!=false)
+    while(leutudo==false)
     {
         x=primeiro;
         y=primeiro;
 
         jconect(conectados,ligacoes);  //na lateral direita tem?
-
+        leutudo=true;
 
     }
 
